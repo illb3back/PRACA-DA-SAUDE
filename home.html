@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nome do usuário</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
+    <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+<!--Gráfico 1-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+<!-- Gráfico2-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['agosto',  50,      70],
+          ['setembro',  10,      20],
+          ['outubro',  30,       40],
+          ['novembro',  50,      60]
+        ]);
+
+        var options = {
+          title: 'Gráfico de peso',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+    <style>
+        p {
+            font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .foto-perfil {
+            height: 100%;
+            max-width: auto;
+            border-radius: 50%;
+        }
+
+        .icones {
+            padding-left: 5px;
+        }
+
+        .titulosBrancos {
+            text-decoration: underline;
+            text-underline-position: under;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+        }
+
+        .titulosVerdes {
+            text-decoration: underline;
+            text-underline-position: under;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #18bc9c
+        }
+
+        .paragrafoBrancos {
+            color: white !important;
+        }
+
+
+        .jumbotron {
+            margin-bottom: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+  
+        .corPrimaria {
+              background-color: #18bc9c;
+              border-bottom-right-radius: 50px;
+              
+
+        }
+
+        .itemMenu {
+            color: white;
+        }
+        #qrcodeImage{
+            width: 100%;
+            height: 70%;
+        }
+
+    @media only screen and (max-width: 400px) {
+    .mobile-hide{ display: none !important; }
+    }
+    @media only screen and (max-width: 400px) {
+    .mobile{ display: inline !important; }
+    }
+    @media only screen and (min-width: 500px) {
+    .desktop-hide{ display: none !important; }
+    }
+
+    footer {
+    line-height: 50px;
+    height: 100px;
+    background: #18bc9c;
+    padding: 28px;
+
+}
+
+footer ul {
+    float: right;
+    display: table;
+}
+
+footer ul li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
+.icons{
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color:#2c3e50">
+        <a class="navbar-brand" href="#" style=color:white>$nome_do_usuários</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+            <ul class="navbar-nav">
+                <li>
+                    <a href="imc.html" class="nav-link" style=color:white>IMC</a>
+                </li>
+                <li>
+                    <a href="dados.html" class="nav-link" style=color:white>Cadastrar dados</a>
+                </li>
+                <li>
+                    <a href="#evolucao" class="nav-link" style=color:white>Evolução</a>
+                </li>
+                  <li>
+                    <div class="mobile"><div class="desktop-hide" class="nav-link" style=color:white  type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado"><a href="#"></a>Gerar Qr-code</div></div>
+                </li>
+         
+                <li>
+                    <a href="#contato" class="nav-link" style=color:white>Contato</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="jumbotron text-center corPrimaria">
+        <div class="container">
+            <img src="img/pokemon-go.png" class="foto-perfil" alt="Responsive image">
+            <h1 class="jumbotron-heading" style="color:white;text-transform: uppercase;">$Nome_de_usuário</h1>
+            <p class="lead" style="color:white !important;">Tempo_de_uso
+            </p>
+            <p>
+                <a href="#" class="btn btn-dark my-2">Exercícios</a>
+            </p>
+  
+        </div>
+    </section>
+    <!-- Projects -->
+    <div class="album py-5 bg-light " id="evolucao">
+        <div class="container">
+            <h2 class="text-center jumbotron-heading titulosVerdes">Minhas evoluções</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 box-shadow">
+                        <center><div id="piechart" style="width: 400px; height: 400px;"></div></center>
+                        <div class="card-body">
+                            <p class="card-text">Meu IMC</p>
+                            
+                          
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-success">Postar no instagram</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Postar no facebook</button>
+                                </div>
+                                <small class="text-muted">Indice de massa corporea</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 box-shadow">
+                        <center><div id="curve_chart" style="width: 400px; height: 400px"></div></center>
+
+                        <div class="card-body">
+                             <p class="card-text" >Minha evolução</p>
+                            
+                            <p class="Meu IMC"></p>
+                        
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-success">Postar no Instagram</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Postar no facebook</button>
+                                </div>
+                                <small class="text-muted">Gráfico de peso</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="jumbotron text-center corPrimaria" id="">
+        <div class="container">
+            <h2 class="jumbotron-heading titulosBrancos">Dica do dia</h2>
+            <p class="lead paragrafoBrancos">Fazer exercício é bom por conta desse motivo, daquele motivo e não podemos esquecer deste motivo</p>
+        </div>
+    </section>
+
+    <section Id="">
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center jumbotron-heading titulosVerdes">ALGUM TEMA</h2>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">Preencher com algum conteúdo importante</p>
+               
+                </blockquote>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA</p>
+               
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape-prin" >
+        <ul id="contato">
+            <li><a href="#"><img src="https://img.icons8.com/doodle/48/000000/instagram-new.png"/></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/doodle/48/000000/gmail.png"/></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/></a></li>
+        </ul>
+        <p style="color: white;">© Fundação cariri 2020 </p>
+        </footer>
+
+    <!-- modal-->
+   
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+   
+      <div class="modal-footer">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Endereço de email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Senha</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+  </div>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Gerar</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Qr-code -->
+
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <img id="qrcodeImage" src="img/qrcode.jpg">
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

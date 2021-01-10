@@ -1,0 +1,86 @@
+      #button_dados{
+        margin-left: 60%;
+        margin-top: -100%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 40%;
+        height: 20%;
+        
+
+      }
+      .container{
+        margin-top: 5%;
+      }
+
+      .img_dado{
+        width: 320px;
+      }
+      .title_dados{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.2px;
+    color: rgb(41, 41, 41);
+      }
+/*forma*/
+  .container-forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+            
+#progress{
+  width: 40
+}
+
+
+/** Css sexo.html*/
+
+#progress{
+  width: 40
+}
+
+
+
+/*estomago*/
+        }
+.img-button{
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-left: 10px;
+    align-items: center;
+
+}
+.text-dia{
+  width: 30%;
+}
+                /** Css column*/
+   .container-column{
+          display: flex;
+          flex-direction: column;
+          align-items: center
+        }
+
+
+     #button-column-style{
+         margin-top: 10%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 450px;
+        height: 60px;
+        }
+
+        .button-column{
+          display: flex;
+          flex-direction: column;
+        }
+
