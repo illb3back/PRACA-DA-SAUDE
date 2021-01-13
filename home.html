@@ -169,7 +169,46 @@ footer ul li {
     height: 48px;
 }
 
+.container-imc{
 
+}
+.imc-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-imc{    
+    display: flex;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 2px solid rgb(232, 232, 232);
+    border-radius: 9px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.p-imc{
+font-size: 16px;
+line-height: 24px;
+color: rgb(41, 41, 41);
+
+
+}
+
+.h3-imc{
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 28px;
+letter-spacing: -0.1px;
+color: rgb(41, 41, 41);
+margin-top: -10%;
+
+}
+
+.div-imc-img{
+    margin-right: 15px;
+}
 
 
 
@@ -275,21 +314,63 @@ footer ul li {
         </div>
     </section>
 
-    <section Id="">
         <div class="album py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center jumbotron-heading titulosVerdes">ALGUM TEMA</h2>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">Preencher com algum conteúdo importante</p>
-               
-                </blockquote>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0">ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA ALGUM TEMA</p>
-               
-                </blockquote>
+            <h2 class="text-center jumbotron-heading titulosVerdes">Previsão com base nas suas respostas</h2>
+            
+                <div class="imc-info">
+                    <div class="container">
+                          <div class="row">
+                            <div class="col-sm">
+
+                              <div class="cont-imc">
+
+                                <div class="div-imc-img">
+                                    <img src="https://cdn-prod.unimealplan.com/finalPageBlocks2/After_first_week.svg">
+                                </div>
+                                <div>
+                                    <p class="p-imc">Após a primeira semana</p>
+                                    <h3 class="h3-imc" >-8kg</h3><!--peso-->
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="col-sm">
+                              
+                              <div class="cont-imc">
+
+                                <div class="div-imc-img">
+                                    <img src="https://cdn-prod.unimealplan.com/finalPageBlocks2/Water.svg">
+                                </div>
+                                <div>
+                                    <p class="p-imc">Consumo mínimo de água</p>
+                                    <h3 class="h3-imc">2l</h3> <!--agua-->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm">
+                              
+                              <div class="cont-imc">
+
+                                <div class="div-imc-img">
+                                    <img src="https://cdn-prod.unimealplan.com/finalPageBlocks2/Calories.svg">
+                                </div>
+                                <div class="teste3">
+                                    <p class="p-imc">Consumo calórico diário</p>
+                                    <h3 class="h3-imc">2104 kcal</h3> <!--kcal-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+      
+                
+
+
             </div>
+            
+           
         </div>
-    </section>
+  
 
     <footer class="rodape-prin" >
         <ul id="contato">
@@ -297,7 +378,7 @@ footer ul li {
             <li><a href="#"><img src="https://img.icons8.com/doodle/48/000000/gmail.png"/></a></li>
             <li><a href="#"><img src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/></a></li>
         </ul>
-        <p style="color: white;">© Fundação cariri 2020 </p>
+        <p style="color: white;">© Fundação cariri 2020</p>
         </footer>
 
     <!-- modal-->
