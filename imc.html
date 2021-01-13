@@ -16,8 +16,8 @@
 
 <style>
 
-.btn{
-  border-radius: 15px;
+#button_imc{
+  border-radius: 105px;
   text-transform: uppercase;
   font-size: 10px;
   padding: 10px 50px;
@@ -55,6 +55,15 @@ h1{
  font-weight: bold;
 }
 
+#medi{
+
+  margin-left: 530px;
+  border: solid #FA8072 3px;
+}
+#a-medi:hover{
+  background-color:  #00FF7F;
+}
+
 
 </style>
 
@@ -86,8 +95,14 @@ h1{
             <a class="nav-link"  data-toggle="modal" data-target=".bd-example-modal-lg"  href="#">Como calcular meu IMC</a>
 
           </li>
+             
+                <li class="nav-item active" id="medi">
+            <a class="nav-link"  id="a-medi" style="color: yellow;" href="#">Fazer medições</a>
+
+          </li>
+          </div>
         </ul>
-      </div>
+      
     </nav>
     <!--Final NavBar -->
 
@@ -100,7 +115,7 @@ h1{
 
   <div class="row">
     <div class="col-sm">
-      <a href="#" class="btn">
+ 
      <div class="card">
   <img src="img/altura.png" class="card-img-top" alt="...">
   <div class="card-body">
@@ -110,13 +125,13 @@ h1{
     <p class="text-imc">15M</p>
     <hr>
     <p class="card-text">Você é mais 5cm que a média</p>
-     </a>
+     
 
   </div>
 </div>
     </div>
     <div class="col-sm">
-    <a href="#" class="btn">
+ 
      <div class="card">
   <img src="img/peso.png" class="card-img-top" alt="...">
   <div class="card-body">
@@ -127,7 +142,7 @@ h1{
        <hr>
     <p class="card-text">Você é 2 Kg mais pesado que a média</p>
 
-    </a>
+  
 
 
 
@@ -135,7 +150,7 @@ h1{
 </div>
     </div>
     <div class="col-sm">
-      <a href="#" class="btn">
+
       <div class="card" >
   <img src="img/imc.png" class="card-img-top" alt="...">
   <div class="card-body">
@@ -145,7 +160,7 @@ h1{
       <p class="text-imc">19.5</p>
        <hr>
     <p class="card-text">Susa categoria é: MAGRO</p>
-    </a>
+
 
 
 
@@ -154,6 +169,7 @@ h1{
 </div>
     </div>
   </div>
+  
 
   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">

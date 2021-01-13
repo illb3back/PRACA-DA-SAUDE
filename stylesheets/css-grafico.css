@@ -1,0 +1,28 @@
+.container{
+	padding-left: 30px;
+
+}
+body{
+	background-color: rgb(234, 247, 246) none repeat scroll 0% 0%;
+}
+
+.title{      
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.2px;
+    color: rgb(41, 41, 41);
+    text-align: center;
+
+}
+
+.lead{
+font-family: OCR A Std, monospace; 
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+color: rgb(41, 41, 41);
+
+}

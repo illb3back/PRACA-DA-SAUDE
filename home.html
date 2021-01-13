@@ -28,16 +28,15 @@
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
+          ['Treino', 'Como seu treino está dividido'],
+          ['Fortalecimneto',     11],
+          ['Aeróbico',      2],
+          ['Cardio',  2],
+      
         ]);
 
         var options = {
-          title: 'My Daily Activities'
+          title: 'Como seu treino está dividido'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -53,7 +52,7 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
+          ['Mes', 'Você', 'Media'],
           ['agosto',  50,      70],
           ['setembro',  10,      20],
           ['outubro',  30,       40],
@@ -328,7 +327,7 @@ margin-top: -10%;
                                     <img src="https://cdn-prod.unimealplan.com/finalPageBlocks2/After_first_week.svg">
                                 </div>
                                 <div>
-                                    <p class="p-imc">Após a primeira semana</p>
+                                    <p class="p-imc">Após a primeira mês</p>
                                     <h3 class="h3-imc" >-8kg</h3><!--peso-->
                                 </div>
                               </div>
