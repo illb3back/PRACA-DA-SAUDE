@@ -4,6 +4,7 @@
 }
 body{
 	background-color: rgb(234, 247, 246) none repeat scroll 0% 0%;
+
 }
 
 .title{      
@@ -25,4 +26,11 @@ font-size: 20px;
 line-height: 26px;
 color: rgb(41, 41, 41);
 
+}
+
+.container-dicas{
+	background-color: #F1EEFF;
+	border:solid 1px;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;  
 }

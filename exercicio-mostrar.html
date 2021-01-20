@@ -9,46 +9,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <style type="text/css">
-      @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 
-body {
-background-color: black;
-background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
-min-height: 100vh;
-font-family: 'Fira Sans', sans-serif;
+
+
+
+.card-stats {
+  max-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}
+
+.card-stats .stat {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding:10px;
 }
 
-.blog-slider {
-    width: 95%;
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    background: #fff;
-    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-    padding: 25px;
-    border-radius: 25px;
-    height: 600px;
-
-}
-.teste{
-  display: flex;
-  flex-direction: row;
-  height: 70%;
-  flex-wrap: wrap;
-  align-items: baseline;
-
-}
-
-#button_mostrar{
+#btn-em{
+  border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    width: 15%;
-    max-width:200px;
-    max-height:150px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-left: 20px !important;
+  margin-top: 20px;
+  color: white;
+  width: 100px;
+
 }
+.container{
+  margin-top: 1% ;
+
+}
+
+body{
+  background-color: #232728;
 
 
     </style>
@@ -56,32 +57,54 @@ font-family: 'Fira Sans', sans-serif;
    
 
 
-    <title>Hello, world!</title>
+    <title>Exercícios</title>
 
   </head>
   <body>
+    <nav class="navbar navbar-dark bg-dark" >
+  <a class="navbar-brand" href="home.html">
+    <img src="img/icon.png" width="70" height="50" class="d-inline-block align-top" alt="">
+    Praça da Saúde
+  </a>
+</nav>
 
 
 
-<div class="blog-slider">
-  <div class="teste">
-  <img src="img/abdominal.gif">
+<div class="container">
 
-
-<p>Primis mi eu metus nostra tempus tincidunt curabitur cursus himenaeos, varius blandit tempus aptent velit maecenas egestas ligula in, ultricies cras dictum pharetra nunc accumsan nostra convallis. placerat curabitur velit aptent egestas hac quisque tempus hac tempus praesent accumsan nisl, fermentum pulvinar morbi potenti nostra mollis ligula sem interdum </p>
+<center><div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/teste.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Abdominais infra</p> <!-- Colocar o texto dependendo do tipo de exercicio-->
+  </div>
+  <hr>
+  <P>Serve para tonificar e fortalecer seu abdominal</P>
+  <hr>
+    <div class="card-stats">
+    <div class="stat">
+      <div class="value">--<sup></sup></div>
+      <div class="type">Quantidade</div>
+    </div>
+    <div class="stat border">
+      <div class="value">--</div>
+      <div class="type">Tempo</div>
+    </div>
+    <div class="stat">
+      <div class="value">--</div>
+      <div class="type">Dificuldade</div>
+    </div>
   </div>
 
-
-  <center><button type="button" class="btn btn-outline-warning" id="button_mostrar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-</svg></button></center>
-</div> 
-
-
-
-
-
-
+</div>
+ <button type="button" class="btn btn-outline-success" id="btn-em"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+  <path d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+</svg></button>
+  <button type="button" class="btn btn-outline-success" id="btn-em"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+  <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+</svg></button>
+<br>
+<button type="button" class="btn btn-outline-success" id="btn-em" style="width: 25%;">Próximo exercício</button>
+    </div></center>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
